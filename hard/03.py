@@ -19,14 +19,14 @@ Hello world
 import re
 
 
-def matchLines(theLineS):
+def match_lines(lines_list):
     """
     Вернет список строк, преобразованных из входных данных по условию
     Если строка состоит из всех цифр, мы хотим преобразовать ее в целое число и разделить ее на 2,
     если это все не цифры, измените ее на нижний регистр, в противном случае обозначьте ее как None.
     """
     result = []
-    for l in theLineS:
+    for l in lines_list:
         # Your code goes here
         pass
     return result
@@ -39,5 +39,5 @@ ABCDEFGH
 
 Hello world
 42"""
-    result = matchLines(text.split('\n'))
+    result = match_lines(text.split('\n'))
     print(result)

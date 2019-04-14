@@ -28,7 +28,7 @@
 import random
 
 
-def randomWords(words, n):
+def random_words(words, n):
     pass
 
 
@@ -37,10 +37,12 @@ def main():
     while True:
         line = input('Введите текст или <q> для выхода: ')
         words = line.split()
+
         if len(words) == 0:
             # Пользователь хочет выйти
             break
-        max_len = max([len(w) for w in words])
-        for n in range(max_len):
-            print('%4d: %s' % (n, ' '.join(randomWords(words, n))))
 
+        max_len = max([len(w) for w in words])
+
+        for n in range(max_len):
+            print('%4d: %s' % (n, ' '.join(random_words(words, n))))

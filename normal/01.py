@@ -18,4 +18,3 @@ def read_csv(file_name='data/data.csv'):
     """Вернуть список словарей из CSV файла"""
     # Your code goes here
     pass
-
